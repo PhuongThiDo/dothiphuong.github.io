@@ -1,0 +1,10 @@
+ .modern {
+            font-style: italic;
+            font-weight: bold;
+            color: yellow;
+        }
+        .old {
+            font-style: italic;
+            font-weight: normal;
+            color:brown ;
+        }
