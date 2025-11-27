@@ -1,0 +1,29 @@
+.ProductDetails {
+    display: none;
+}
+.Product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #aaa;
+}
+.ProductName {
+    font-weight: bold;
+    display: block;
+}
+.ProductPrice {
+    font-style: italic;
+}
+.ProductPrice:before {
+    content: "-";
+}
+.Product {
+    text-align: center;
+    width: 150px;
+    margin: 0px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Product:hover .ProductDetails {
+    display: block;
+}
