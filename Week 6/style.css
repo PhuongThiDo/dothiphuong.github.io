@@ -1,0 +1,25 @@
+div {
+    background-color: yellow;
+    margin-bottom: 2px;
+}
+.firstseventh {
+    font-style:normal;
+}
+.second {
+    color: red;
+    font-weight: bold;
+}
+.third {
+    color:white;
+    font-style: italic;
+    background-color: black;
+}
+.fifthsixth {
+    color: red;
+}
+h {
+    text-decoration: underline;
+    text-align: center;
+    position: center;
+}
+
