@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+    
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+</script>
+
+<p id="myBtn"></p>
+<button onclick="displayDate()">Try it</button>
+<script>
+    function displayDate() {
+    document.getElementById("myBtn").innerHTML = new Date();
+    }
+</script>
+
+
+
+
+<body onload="checkCookies()"> </body>
+
+<input type="text" id="fname" oninput="upperCase()">
+
+<input type="text" id="fname" onchange="upperCase()">
+
+</body>
+</html>
