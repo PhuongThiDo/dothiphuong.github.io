@@ -6,9 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
-    
-    <h1 onclick="changeText(this)">Click on this text!</h1>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+<h2 onclick="changeText(this)">Click on this text!</h2>
 
 <script>
 function changeText(id) {
@@ -16,22 +19,81 @@ function changeText(id) {
 }
 </script>
 
-<p id="myBtn"></p>
-<button onclick="displayDate()">Try it</button>
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+
 <script>
-    function displayDate() {
-    document.getElementById("myBtn").innerHTML = new Date();
-    }
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
 </script>
 
+<p id="demo"></p>
 
+<p>Click "Try it" to execute the displayDate() function.</p>
+<button id="myBtn">Try it</button>
 
+<p id="demo"></p>
 
-<body onload="checkCookies()"> </body>
+<script>
+document.getElementById("myBtn").onclick = displayDate;
 
-<input type="text" id="fname" oninput="upperCase()">
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
 
-<input type="text" id="fname" onchange="upperCase()">
+Enter your name: <input type="text" id="fname" oninput="upperCase()">
+<p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+
+<script>
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+Enter your name: <input type="text" id="fname" oninput="upperCase()">
+<p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+
+<script>
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+
+<br>
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+</script>
 
 </body>
 </html>
