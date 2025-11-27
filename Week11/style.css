@@ -12,28 +12,28 @@
 
 .textbox {
     width: 230px;
-    border: 1px solid #777777;
+    border: 1px solid #ebb0d9;
 }
 
 .textbox:hover {
-    border: 1px solid #ff0000;
+    border: 1px solid #e38fb3;
 }
 
 .textbox:focus {
-    border: 1px solid #ff0000;
+    border: 1px solid #e38fb3;
     background-color: ffffaa;
 }
 
 .header {
-    background-color: #006699;
-    color: #FFFFFF;
+    background-color: #f3b5e1;
+    color: #0f0c0c;
     font-weight: bold;
     text-align: center;
     padding: 2px;
 }
 
 .button {
-    border: 1px solid #777777;
+    border: 1px solid #f7c2e7;
     width: 70px;
 }
 
