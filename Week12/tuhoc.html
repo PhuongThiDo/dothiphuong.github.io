@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form > 
+First name: <input type = "text" name = "first_name" />
+ <br> Last name: <input type = "text" name = "last_name" /> 
+<br> Password: <input type="password" id="password" name="password">
+  <button type="submit">Login</button>
+<br> Description : <br /> 
+<textarea rows = "5" cols = "50" name = "description"> Enter 
+description here... </textarea> 
+<br>
+<input type = "checkbox" name = "maths" value = "on"> Maths
+<input type = "checkbox" name = "physics" value = "on"> 
+Physics
+<br>
+<input type = "radio" name = "subject" value = 
+"maths"> Maths
+ <input type = "radio" name = "subject" value = 
+"physics"> Physics
+<br>
+<select name = "dropdown"> 
+<option value = "Maths" selected>Maths</option> 
+<option value = "Physics">Physics</option> 
+</select>
+<br>
+<form>
+  <input type="button" value="Nhấn tôi" onclick="alert('Bạn vừa nhấn nút!')">
+</form>
+
+<form>
+  <label for="subjects">Select your favorite subjects:</label>
+  <select id="subjects" name="subjects" multiple size="4">
+    <option value="maths">Maths</option>
+    <option value="physics">Physics</option>
+    <option value="chemistry">Chemistry</option>
+    <option value="biology">Biology</option>
+  </select>
+  
+  <button type="submit">Submit</button>
+</form>
+<br>
+<input type = "file" name = "fileupload" 
+accept = "image/*" />
+<input type = "submit" name = "submit" value = "Submit" /> 
+<input type = "reset" name = "reset" value = "Reset" /> 
+<input type = "button" name = "ok" value = "OK" />
+</form>
+<br>
+<input type = "image" name = "imagebutton" src = 
+"rose.jpg" onclick="alert('Bạn vừa nhấn nút!')">/>
+<br>
+<form action="upload.php" method="post">
+  <input type="image" src="send.png" alt="Gửi Form" width="100">
+</form>
+
+<br>
+<input type="color" name="favcolor">
+ <input type="date" name="bday">
+ <input type="email" name="email">
+ <input type="number" name="quantity" min="1" max="5">
+ <input type="range" name="points" min="0" max="10">
+ <input type="tel" name="usrtel">
+<br>
+<button onclick="logMessage();">Test button</button>
+<br>
+<script>
+  function logMessage() {
+    console.log('Test button is clicked');
+  }
+</script>
+<input type="text" id="a">
+<input type="text" id="b">
+<button onclick="sum()">Calculate sum</button>
+
+<script>
+function sum() {
+  var a = parseFloat(document.getElementById("a").value);
+  var b = parseFloat(document.getElementById("b").value);
+  alert("The sum is: " + (a + b));
+}
+</script>
+<br>
+
+</form>
+
+</body>
+</html>
