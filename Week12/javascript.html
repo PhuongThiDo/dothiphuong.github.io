@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="regForm">
+  <input id="pwd" type="password" name="password" placeholder="Password">
+  <input id="cpwd" type="password" name="confirm" placeholder="Confirm password">
+  <div id="err" style="color:red"></div>
+  <button type="submit">Register</button>
+</form>
+
+<script>
+document.getElementById('regForm').addEventListener('submit', function(e){
+  const p = document.getElementById('pwd').value;
+  const cp = document.getElementById('cpwd').value;
+  if (p !== cp) {
+    e.preventDefault(); // ngăn gửi form
+    document.getElementById('err').textContent = "Password and confirmation don't match";
+  }
+});
+</script>
+
+<input id="search" placeholder="Search...">
+<ul id="list"></ul>
+
+<script>
+const items = ['what is javascript', 'what can javascript do', 'javascript tutorial', 'js fetch api'];
+const input = document.getElementById('search');
+const list = document.getElementById('list');
+
+input.addEventListener('input', () => {
+  const q = input.value.toLowerCase();
+  list.innerHTML = '';
+  if (!q) return;
+  items.filter(i => i.includes(q)).forEach(match => {
+    const li = document.createElement('li');
+    li.textContent = match;
+    list.appendChild(li);
+  });
+});
+</script>
+
+</body>
+</html>
